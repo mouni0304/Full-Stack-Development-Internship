@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    overflow-x: hidden;
+
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+/* Navbar */
+
+header {
+    display: block;
+
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 15px 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width:992px) {
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        display: flex;
+        flex-basis: auto;
+
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+    max-width: 280px;
+    
+}
+
+.navbar-collapse {
+    flex-grow: 1;
+    align-items: center;
+}
+
+.nav-menu-wrapper {
+    flex: 1;
+    text-align: center;
+}
+
+
+.navbar-nav {
+    align-items: center;
+    justify-content: end;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 2rem;
+}
+
+.main-menu ul li {
+    margin: 0 5px;
+    position: relative;
+}
+
+.main-menu .nav-link:hover {
+    color: #1534e3;
+}
+
+.main-menu ul li a {
+    font: normal 700 14px 'Nunito', sans-serif;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    color: #000;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.toggle-btn {
+    width: 45px;
+    height: 43px;
+    background-color: #1534e3;
+    border-radius: 6px;
+    padding: 6px 0;
+    border: none;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.toggle-btn span {
+    width: 20px;
+    height: 8px;
+    background: white;
+    margin: 4px 0px;
+    display: block;
+}
+
+.toggle-btn:focus,
+.toggle-btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+@media (max-width:991px) {
+
+
+
+    .navbar-brand {
+        max-width: 300px;
+    }
+
+    .toggle-btn {
+        display: flex;
+    }
+
+    .navbar-collapse {
+        background-color: #1534e3;
+        padding: 16px;
+    }
+
+    .navbar-collapse .nav-link {
+        color: #fff;
+        padding: 10px 0;
+
+    }
+
+    .navbar-collapse .nav-link:hover {
+        color: #000;
+    }
+
+    .main-menu ul li a {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:576px) {
+
+
+    .navbar-brand {
+        max-width: 240px;
+
+    }
+
+    .navbar-collapse .nav-link {
+        padding: 10px 0;
+    }
+
+    .main-menu ul li a {
+        font-size: 20px;
+    }
+
+    .toggle-btn {
+        height: 45px;
+        width: 42px;
+    }
+
+    .toggle-btn span {
+        width: 20px;
+        height: 25px;
+    }
+}
+
+
+/* Contact Header */
+.contact_header {
+    background: linear-gradient(135deg, #1534e3 0%, #1e3de3 100%);
+    padding: 150px 0 80px;
+    text-align: center;
+}
+
+.contact_header h1 {
+    font-family: 'Iceberg', sans-serif;
+    color: white;
+    font-size: 48px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+.contact_header p {
+    font-family: 'Nunito', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+/* Contact Section */
+.contact_section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.contact_form {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact_form h2 {
+    font-family: 'Iceberg', sans-serif;
+    color: #1534e3;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.contact_form .form-control {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact_form .form-control:focus {
+    border-color: #1534e3;
+    box-shadow: none;
+}
+
+.contact_form textarea.form-control {
+    resize: none;
+}
+
+.contact_form .btn-primary {
+    background-color: #1534e3;
+    border: none;
+    padding: 15px 40px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.contact_form .btn-primary:hover {
+    background-color: #0f29b3;
+    transform: translateY(-2px);
+}
+
+.contact_info {
+    padding: 40px;
+}
+
+.contact_info h2 {
+    font-family: 'Iceberg', sans-serif;
+    color: #1534e3;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.contact_item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.contact_item i {
+    width: 50px;
+    height: 50px;
+    background-color: #1534e3;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.contact_item h4 {
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.contact_item p {
+    font-family: 'Nunito', sans-serif;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Contact Image */
+.contact-image {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Map Section */
+.map_section {
+    padding: 0;
+}
+
+.map_container {
+    width: 100%;
+}
+
+.map_container iframe {
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .contact_header {
+        padding: 120px 0 60px;
+    }
+    
+    .contact_header h1 {
+        font-size: 36px;
+    }
+    
+    .contact_form,
+    .contact_info {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact_header {
+        padding: 100px 0 40px;
+    }
+    
+    .contact_header h1 {
+        font-size: 28px;
+    }
+    
+    .contact_header p {
+        font-size: 14px;
+    }
+    
+    .contact_form,
+    .contact_info {
+        padding: 20px;
+    }
+    
+    .contact_item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact_item i {
+        margin: 0 auto 15px;
+    }
+}
+
+
+
+/*----Footer------*/
+/*------Email Section--------*/
+.email .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email_text {
+    font: normal 900 22px/24px 'Lato', sans-serif;
+    letter-spacing: 1.26px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.email_input {
+    display: flex;
+    flex: 1;
+    max-width: 500px;
+}
+
+.text_box {
+    background-color: #f1f1f1;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    flex: 1;
+}
+
+.text_box::placeholder {
+    font: normal 700 20px/24px 'Nunito', sans-serif;
+    letter-spacing: 1.08px;
+    opacity: 1;
+}
+
+.email a {
+    text-decoration: none;
+    background-color: #1534e3;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .email .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .email_text {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .email_input {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .email_input {
+        flex-direction: column;
+    }
+    
+    .text_box {
+        margin-bottom: 10px;
+    }
+    
+    .email a {
+        width: 100%;
+    }
+}
+
+/*--------Social Media Section------*/
+.social_media_section {
+    padding: 80px 0 20px 0;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
+
+/*-----Last Section-------*/
+.footer_section {
+    padding-top: 100px;
+}
+
+.slab1 .title {
+    font: normal 600 30px 'Nunito', sans-serif;
+    letter-spacing: 1.54px;
+    opacity: 1;
+    padding: 15px 0 0 0;
+}
+
+.slab1 .address {
+    font: normal 200 12px/24px 'Nunito', sans-serif;
+    letter-spacing: 3px;
+    max-width: 420px;
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
+
+.slab2 p {
+    font: normal 600 12px 'Nunito', sans-serif;
+    letter-spacing: 6px;
+    padding: 71px 0 0 0;
+}
+
+.links {
+    padding: 26px 0 100px 0;
+}
+
+.slab2 .links a {
+    font: normal 200 12px 'Nunito', sans-serif;
+    letter-spacing: 3px;
+    color: #909090;
+    text-transform: uppercase;
+    padding-left: 50px;
+}
+
+.slab3 {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+.copyright {
+    font: normal 200 12px 'Nunito', sans-serif;
+    letter-spacing: 3px;
+    color: #909090;
+}
+
+
+@media (max-width:576px) {
+        /* Footer */
+    .email_section {
+        padding: 20px;
+    }
+    
+    .slab1 .title {
+        font-size: 24px;
+    }
+    
+    .slab1 .address {
+        font-size: 11px;
+        letter-spacing: 1px;
+        padding: 15px;
+    }
+    
+    .slab2 p {
+        font-size: 14px;
+        letter-spacing: 3px;
+        padding: 30px 0 0;
+    }
+    
+    .footer_section {
+        padding-top: 50px;
+    }
+    
+    .links {
+        padding: 20px 0 50px;
+    }
+}
+
+
+    
+@media (max-width:992px) {
+        /* Footer email section */
+    .email .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .email .col-6 {
+        width: 100%;
+        max-width: 100% !important;
+    }
+    
+    .email_text {
+        font-size: 18px;
+        padding: 20px 0 10px;
+    }
+    
+    .email_input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .email_input .text_box {
+        width: 100%;
+    }
+    
+    /* Footer links */
+    .slab2 .links .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .slab2 .links a {
+        padding-left: 0;
+    }
+
+    
+}

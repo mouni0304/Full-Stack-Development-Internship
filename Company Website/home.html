@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prola Tech Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="home.css">
+
+    <!----Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iceberg&family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merienda:wght@300..900&family=Neucha&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-------Icons---------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+
+</head>
+
+<body>
+    <!---------Header Navbar--------->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top shadow">
+
+            <!-- Proper Bootstrap container -->
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="home.html">
+                    <img src="images/logo1.svg" alt="Logo" class="img-fluid logo-img">
+                </a>
+
+                <!-- Toggle Button -->
+                <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!------Collapse  Menu ----->
+                <div class="collapse navbar-collapse main-menu" id="navbarContent">
+                    <div class="nav-menu-wrapper">
+                        <ul class="navbar-nav me-auto" id="menu">
+
+                            <li class="nav-item "><a class="nav-link" href="about.html">ABOUT</a></li>
+                            <li class="nav-item "><a class="nav-link" href="#">PRODUCT</a></li>
+                            <li class="nav-item "><a class="nav-link" href="services.html">SERVICES</a></li>
+                            <li class="nav-item "><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                            <li class="nav-item "><a class="nav-link" href="blog.html">BLOG</a></li>
+                            <li class="nav-item "><a class="nav-link" href="contact.html">CONTACT</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Hero Slider/Carousel-->
+        <div id="hero-slider" class=" home-sliders carousel slide" data-bs-ride="carousel">
+
+
+            <!--Indicators-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="0"
+                    class="active bg-dark"></button>
+                <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="1" class="bg-dark"></button>
+                <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="2" class="bg-dark"></button>
+            </div>
+
+            <!--Slides-->
+            <div class="carousel-inner">
+
+                <div class="carousel-item active"> <!--Slide 1-->
+                    <img src="images/slider1.jpg" alt="Slide 1" class="d-block w-100">
+
+                    <div class="carousel-caption  textbox text-start"> <!--Text over the images-->
+
+                        <div class="blue-line rounded-pill"></div>
+                        <h1 class="text text-dark display-2 display-md-4 display-lg-4">
+                            Delivering Simple Yet<br>
+                            <span style="color:#1534e3;">Meaningful</span> Applications
+                        </h1>
+
+                        <a class="btn rounded-pill px-5" href="services.html"
+                            style="color:#1534e3; background-color:white; font-family: Nunito,sans-serif;">
+                            MORE &rarr;
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item"> <!--Slide 2-->
+                    <img src="images/slider2.jpg" alt="Slide 2" class="d-block w-100">
+
+                    <div class="carousel-caption textbox text-start">
+                        <div class="blue-line rounded-pill"></div>
+                        <h1 class="text text-dark display-2 display-md-4 display-lg-6">
+                            The World In <br>
+                            <span style="color:#1534e3;">Your Hands</span>
+                        </h1>
+                        <a class="btn rounded-pill px-5" href="services.html"
+                            style="color:#1534e3; background-color:white; font-family: Nunito,sans-serif;">
+                            MORE &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <div class="carousel-item"> <!--Slide 3-->
+                    <img src="images/slider3.jpg" alt="Slide 3" class="d-block w-100">
+
+                    <div class="carousel-caption textbox text-start">
+                        <div class="blue-line rounded-pill"></div>
+                        <h1 class="text text-dark display-2 display-md-4 display-lg-6">
+                            Transforming <br>Thoughts To <br>
+                            <span style="color:#1534e3;">Actions</span>
+                        </h1>
+                        <a class="btn rounded-pill px-5" href="services.html"
+                            style="color:#1534e3; background-color:white; font-family: Nunito,sans-serif;">
+                            MORE &rarr;
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!--About-->
+        <section class="about_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-5 text-center text-lg-start">
+
+                        <div class="line1 rounded-pill mx-auto mx-lg-0"></div>
+                        <p class="title relative iceberg">PROLA TECH</p>
+                        <p class="subtitle iceberg ">YOUR TRUSTED <br> PARTNER IN DIGITAL <br>INNOVATION</p>
+                        <p class="content">
+                            An IT services company providing specialized services in Mobile
+                            Application Development, Web Application Development, Internet
+                            of Things (IoT), Web Services and Cloud Based Solutions. Prola
+                            Tech provides end-to-end services from planning, development,
+                            implementation to maintenance.
+                        </p>
+                        <a href="about.html" class="btn1 textblue">Know More
+                            <span><img src="images/arrow_blue.svg" alt="About the company"></span>
+                        </a>
+
+                    </div>
+
+                    <!--Image on the right side-->
+                    <div class="col-12 col-lg-7 mt-4 mt-lg-0 text-center">
+                        <img src="images/about_thumbnail.jpg" alt="about us thumbnail" class="thumbnail_img">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Services-->
+        <section class="services_section">
+            <div class="container-fluid px-3 px-lg-5">
+                <div class="row g-0">
+                    <div class="col-12  col-md-12 col-lg-5 left_text text-center text-lg-start">
+
+                        <div class="line2 rounded-pill mx-auto mx-lg-0"></div>
+                        <p class="title relative nunito">SERVICES</p>
+                        <p class="subtitle iceberg textwhite align-items-center">A TRUSTED PARTNER<br>FOR ALL YOUR IT<br>REQURIMENTS</p>
+                        <p class="content textwhite">
+                            Offer you expert solutions and enable your organization to
+                            optimize your business processes. We provide end-to-end services
+                            starting from design, development, implementation, maintenance,
+                            and regular upgrades
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-lg-6 right_images mt-4 mt-lg-0">
+                        <div class="row g-0">
+
+                            <div class="col-6">
+                                <div class="service-card">
+                                    <img src="images/srv1.png" alt="Mobile Applications">
+                                    <div class="overlay">
+                                        <h4 class="text-center">Mobile<br>Application</h4>
+                                        <a href="services.html">MORE →</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="service-card">
+                                    <img src="images/srv2.png" alt="Web Applications">
+                                    <div class="overlay">
+                                        <h4 class="text-center">Web<br>Application</h4>
+                                        <a href="services.html">MORE →</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="service-card">
+                                    <img src="images/srv3.png" alt="IOT Applications">
+                                    <div class="overlay">
+                                        <h4 class="text-center">IoT<br>Application</h4>
+                                        <a href="services.html">MORE →</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="service-card">
+                                    <img src="images/srv4.png" alt="Domains">
+                                    <div class="overlay">
+                                        <h4 class="text-center">Domains</h4>
+                                        <a href="services.html">MORE →</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------Accomplishments------->
+        <section class="accomplishments_section">
+            <div class="container">
+                <div class="row">
+                    <div class="line1 rounded-pill mx-auto"></div>
+                    <p class="text-center heading pb-5">OUR <span class="textblue">ACCOMPLISHMENTS</span></p>
+
+                    <!--Cards-->
+                    <div class="projects">
+                        <div class="card" style="width: 300px; height: 400px;">
+                            <div class="text-center py-4">
+                                
+                                    <img class="card-img-top" src="images/project1logo.jpg" alt="TALLY INTEGRATED CRM"
+                                        style="width:60%;" class="img-fluid">
+                                    <p class="card-text pt-4 text-black p-name">TALLY INTEGRATED CRM</p>
+
+                                
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 300px; height: 400px; background-color: red;">
+                            <div class="text-center py-4">
+                                
+                                    <img class="card-img-top" src="images/project2logo.jpg" alt="TALLY INTEGRATED CRM"
+                                        style="width:60%;" class="img-fluid">
+                                    <p class="card-text pt-4 text-white p-name">ERP<br>SHIPPING</p>
+                                
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 300px; height: 400px; background-color:rgb(252, 216, 11);">
+                            <div class="text-center py-4">
+                                
+                                    <img class="card-img-top" src="images/sampoorna.png" alt="TALLY INTEGRATED CRM"
+                                        style="width:60%;" class="img-fluid">
+                                    <p class="card-text pt-4 text-black p-name">VILLAGE ASSET TRACKING SYSTEM</p>
+                                
+                            </div>
+                        </div>
+
+                        <div class="card justify-content-center"
+                            style="width: 300px; height: 400px; background-color:#1534e3">
+                            <div class="text-center">
+                                <a href="portfolio.html">
+                                    <p class="card-text text-white p-name">MORE...</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!---------Quotes------->
+        <section class="quotes_section bg-black">
+            <div class="container-fluid">
+                <p class="text-center text-white text_align">“If a solution isn’t enduring, it’s
+                    not really a solution. In
+                    process automation, we need enduring
+                    systems and solutions that become standard in their
+                    own right.”</p>
+
+                <p class="text-center text-white text_align" style="font-size: 14px;"><br><i>– Maggie walker</i></p>
+                <br><br><br><br><br><br><br>
+
+                <p class="text-white text-center text2">Walker We believe and strive to achieve the best in our
+                    services. We
+                    focus on enduring solutions and enduring relationships.</p>
+            </div>
+        </section>
+
+        <!--About Sliders-->
+        <section class="about_sliders">
+            <div class="container-fluid ">
+                <div class="container">
+                    <div class="row justify-content-center ">
+                        <div class="testimonial-card shadow">
+
+                            <!--Sliders-->
+                            <div id="slider" class="carousel slide" data-bs-ride="carousel">
+
+                                <!--Indicators-->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#slider" data-bs-slide-to="0"
+                                        class="active bg-dark"></button>
+                                    <button type="button" data-bs-target="#slider" data-bs-slide-to="1"
+                                        class="bg-dark"></button>
+                                    <button type="button" data-bs-target="#slider" data-bs-slide-to="2"
+                                        class="bg-dark"></button>
+                                    <button type="button" data-bs-target="#slider" data-bs-slide-to="3"
+                                        class="bg-dark"></button>
+                                </div>
+
+                                <div class="carousel-inner text-center">
+                                    <div class="carousel-item active">
+                                        <img src="images/avi.jpg" alt="Avinash" style="width:160px; height:160px;">
+                                        <div class="p-content text-center px-4">
+                                            <h2 class="profile-name">Avinash E</h2>
+                                            <p class="profile-d">CEO RAVAR India</p>
+                                            <p class="text-dark profile-text">The team has expertise in several domains
+                                                and
+                                                technologies,
+                                                which is an added bonus. Their process and business acumen is
+                                                commendable.
+
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="images/guruprasad.jpg" alt="Guruprasad"
+                                            style="width:160px; height:160px;">
+                                        <div class="p-content text-center px-4">
+                                            <h2 class="profile-name">Guruprasad</h2>
+                                            <p class="profile-d">Presalis</p>
+                                            <p class="text-dark profile-text">
+                                                Prola Tech is the most reliable company for staff augmentation.
+                                                They have provided professional and experienced staff within the
+                                                budget and on time. Our organization is delighted with the outcome
+                                                of their service. We are also very much impressed with their
+                                                expertise in niche technologies and domain knowledge.
+
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="images/shankar prasad.png" alt="Shankar Prasad"
+                                            style="width:160px; height:160px;">
+                                        <div class="p-content text-center px-4">
+                                            <h2 class="profile-name">Dr Shankar Prasad</h2>
+                                            <p class="profile-d">Sampoorna Swaraj</p>
+                                            <p class="text-dark profile-text">
+                                                Our biggest challenge was to get affordable services without
+                                                compromising on the quality. That's when Prola Tech stepped
+                                                in to offer a pilot project for a web-based application using
+                                                cutting-edge technologies that surpassed our expectations. We will
+                                                definitely recommend and get their service again for our upcoming
+                                                projects.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="images/chetan.jpg" alt="Chetan" style="width:160px; height:160px;">
+                                        <div class="p-content text-center px-4">
+                                            <h2 class="profile-name">Chetan G</h2>
+                                            <p class="profile-d">CEO Mahatvaa</p>
+                                            <p class="text-dark profile-text">
+                                                Choosing Prola Tech as our service partner is one of the wise
+                                                decisions we made. Their service is excellent and they
+                                                understood our requirements right at the very beginning and
+                                                were able to deliver the services on time. Thank you Prola
+                                                Tech for your services. We wish you all the very best!
+
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#slider"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#slider"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!----------Clients---------->
+        <section class="clients_section">
+            <div class="container-fluid bg-light">
+                <div class="container">
+                    <div class="clients-img">
+                        <img src="images/client1logo.png" alt="Mahatvaa" style="width: 250px; height: 180px;">
+                        <img src="images/client2.png" alt="Maanja" style="width: 250px; height: 180px;">
+                        <img src="images/sampoorna.png" alt="Sampoorna" style="width: 250px; height: 180px;">
+                        <img src="images/prisalis logo.png" alt="Prisalis" style="width: 250px; height: 180px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-----Blogs------>
+        <section class="blogs_text_section">
+            <div class="container">
+                <div class="line2 rounded-pill mx-auto"></div>
+                <h1 class="blog_heading text-white text-center">LATEST BLOGS</h1>
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0 text-center text-md-start">
+                            <p class="text-white blogger_name">By Sagar Durgannavar, 11 Jan 2021</p>
+                            <p class="blog_card_head text-white">LUIS | Let's make our applications smarter</p>
+                            <p class="blog_card_content text-white">
+                                I once found myself in same situation when a customer started talking with my app and I
+                                had to
+                                tell
+                                her that my app does not understand your language.
+                                You must click buttons placed in it.
+                                "That's a boring app!" she said.
+                            </p>
+
+                            <a href="#" class="btn1 text-white">Know More
+                                <span><img src="images/arrow_white.svg" alt="About the company"></span>
+                            </a>
+
+                        </div>
+
+
+
+                        <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+                            <p class="text-white blogger_name">By Sourav Soni, 02 Jan 2021</p>
+                            <p class="blog_card_head text-white">Optical Character Recognition | Recognizing Text to
+                                Labels
+                            </p>
+                            <p class="blog_card_content text-white">
+                                OCR is not a new technology, it has been here for years.
+                                But now it has become trending with the use of other technologies.
+                                From a scanner app to the live language translation app,
+                                OCR has become a way for the people and especially for developers to develop a different
+                                use-case with
+                                the integration of it.
+                            </p>
+
+                            <a href="#" class="btn1 text-white">Know More
+                                <span><img src="images/arrow_white.svg" alt="About the company"></span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!----------Blog Image----------->
+        <section class="blog_img_section">
+            <div class="container ps-0 ps-lg-5">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-6 digital_content text-center text-lg-start mb-4 mb-lg-0">
+                        <p class="text-dark blogger_name">by Shrunga P, 27 Feb 2021</p>
+                        <p class="blog_card_head text-dark">Why Digital Marketing?</p>
+                        <p class="blog_card_content text-dark">
+                            If you're only promoting your company through traditional marketing methods, you're missing
+                            an
+                            excellent opportunity to reach value-added leads through digital marketing.
+                        </p>
+
+                        <a href="#" class="btn1 textblue">Know More
+                            <span><img src="images/arrow_blue.svg" alt="About the company"></span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-6 text-center">
+                        <img src="images/blog.svg" alt="Blog" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+<!--------Footer------>
+    <!----Email Section---->
+    <footer>
+        <section class="email_section">
+            <div class="email">
+                <div class="container">
+
+                    <p class="col-12 col-lg-6 email_text text-center text-lg-start">LET US <span
+                            class="textblue">CONNECT</span> WITH EACH OTHER</p>
+                    <div class="col-12 col-lg-6 email_input text-center text-lg-start">
+                        <input type="text" placeholder="ENTER THE TEXT..." class="text-dark text_box">
+                        <a class="bgblue block">
+                            <img src="images/email.svg" alt="email">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!---Social Media Section-->
+        <section class="social_media_section">
+            <div class="social_media">
+                <div class="container text-center">
+                    <div class="d-flex justify-content-center gap-4">
+
+                        <a href="https://www.linkedin.com/company/prola-tech" 
+                        target="_blank" class="social-btn linkedin">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/100084624307595/" target="_blank" class="social-btn facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" class="social-btn instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---Last Section-->
+        <section class="footer_section bg-dark text-center">
+            <div class="slab1">
+                <div class="line1 rounded-pill mx-auto"></div>
+                <p class="title text-white">PROLA TECH</p>
+                <p class="address text-white">
+                    <b>Toll-Free Number:</b>
+                    18008890734
+                    <br>
+                    <b>Address :</b> #7, 3rd floor, 12th Cross Road, 1st Phase, Ideal Homes Township, Near Global
+                    Village Tech
+                    Park, RR Nagar, Bengaluru, Karnataka 560098
+                </p>
+
+            </div>
+
+            <div class="border-top border-secondary"></div>
+
+            <div class="slab2">
+                <p class="text-white">QUICK LINKS</p>
+                <div class="d-flex links">
+                    <div class="container">
+                        <a href="about.html" class="d-inline-block">About Us</a>
+                        <a href="#" class="d-inline-block">Products</a>
+                        <a href="services.html" class="d-inline-block">Services</a>
+                        <a href="portfolio.html" class="d-inline-block">Portfolio</a>
+                        <a href="blog.html" class="d-inline-block">Blog</a>
+                        <a href="contact.html" class="d-inline-block">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary"></div>
+
+            <div class="slab3">
+                <p class="copyright">@ All Rights Reserved. 2025</p>
+            </div>
+        </section>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
