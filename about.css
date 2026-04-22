@@ -1,0 +1,766 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    overflow-x: hidden;
+
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+
+/* Navbar */
+
+header {
+    display: block;
+
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 15px 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width:992px) {
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        display: flex;
+        flex-basis: auto;
+
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+    max-width: 280px;
+    
+}
+
+.navbar-collapse {
+    flex-grow: 1;
+    align-items: center;
+}
+
+.nav-menu-wrapper {
+    flex: 1;
+    text-align: center;
+}
+
+
+.navbar-nav {
+    align-items: center;
+    justify-content: end;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 2rem;
+}
+
+.main-menu ul li {
+    margin: 0 5px;
+    position: relative;
+}
+
+.main-menu .nav-link:hover {
+    color: #1534e3;
+}
+
+.main-menu ul li a {
+    font: normal 700 14px 'Nunito', sans-serif;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    color: #000;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.toggle-btn {
+    width: 45px;
+    height: 43px;
+    background-color: #1534e3;
+    border-radius: 6px;
+    padding: 6px 0;
+    border: none;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.toggle-btn span {
+    width: 20px;
+    height: 8px;
+    background: white;
+    margin: 4px 0px;
+    display: block;
+}
+
+.toggle-btn:focus,
+.toggle-btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+@media (max-width:991px) {
+
+
+
+    .navbar-brand {
+        max-width: 300px;
+    }
+
+    .toggle-btn {
+        display: flex;
+    }
+
+    .navbar-collapse {
+        background-color: #1534e3;
+        padding: 16px;
+    }
+
+    .navbar-collapse .nav-link {
+        color: #fff;
+        padding: 10px 0;
+
+    }
+
+    .navbar-collapse .nav-link:hover {
+        color: #000;
+    }
+
+    .main-menu ul li a {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:576px) {
+
+
+    .navbar-brand {
+        max-width: 240px;
+
+    }
+
+    .navbar-collapse .nav-link {
+        padding: 10px 0;
+    }
+
+    .main-menu ul li a {
+        font-size: 20px;
+    }
+
+    .toggle-btn {
+        height: 45px;
+        width: 42px;
+    }
+
+    .toggle-btn span {
+        width: 20px;
+        height: 25px;
+    }
+}
+
+
+
+/*-----------Main -----------*/
+.people-img{
+    width:100%; 
+    min-height:100%;
+ margin-left:auto; 
+    margin-right:auto;
+}
+#myteam {
+    max-height: 600px;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@media (max-width:430px) {
+    #myteam {
+        max-height: 472px;
+        min-height: 302px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+.p2 {
+    padding: 100px 0;
+}
+
+@media (min-width:1024px) {
+    .p2 {
+        padding: 60px 0;
+    }
+
+}
+
+.lw .cw {
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 100%;
+}
+
+@media (min-width:1440px) {
+    .lw .cw {
+        max-width: 100%;
+        margin: auto;
+    }
+
+}
+
+.p2 .title {
+    padding: 20px 0 30px 0;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 5.4px;
+    position: relative;
+    font-family: 'Iceberg', serif;
+    font-style: normal;
+}
+
+@media (min-width:1024px) {
+    .p2 .title {
+        padding: 20px 0 60px 0;
+        font-size: 28px;
+        letter-spacing: 8.4px;
+
+    }
+
+}
+
+.p2 .title:before {
+    content: "";
+    width: 100px;
+    height: 6px;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1534e3;
+}
+
+.right-img {
+    display: flex;
+    flex-flow: column;
+}
+
+@media (min-width:1024px) {
+    .right-img {
+        flex-flow: row nowrap;
+    }
+
+}
+
+.p2 p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 30px 0 0 0;
+}
+
+@media (min-width:1024px) {
+    .p2 p {
+        font-size: 18px;
+        margin: 0;
+        width: 70%;
+    }
+
+}
+
+.merienda {
+    font-family: Merienda, serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+@media (min-width:1024px) {
+    .about .p2 .flex-1:not(:first-child) {
+        padding-left: 30px;
+    }
+
+}
+
+.p2 div.flex-1 .flex-1 {
+    margin: 30px 0 0 0;
+}
+
+@media (min-width:1024px) {
+    .p2 div.flex-1 .flex-1 {
+        margin: 0;
+    }
+
+}
+
+.p2 img {
+    border: 10px solid #000;
+}
+
+@media (min-width:1024px) {
+    .p3 {
+        padding: 81px 105px;
+    }
+
+}
+
+@media (min-width:1440px) {
+    .fw .cw {
+        padding-right: 5%;
+        padding-left: 5%;
+        max-width: 100%;
+        margin: auto;
+    }
+
+}
+
+.p3 .flex {
+    align-items: center;
+    display: flex;
+}
+
+.gridlgrowsmcol {
+    flex-flow: column;
+}
+
+@media (min-width:1024px) {
+    .gridlgrowsmcol {
+        flex-flow: row nowrap;
+    }
+
+}
+
+.p3 .image img {
+    width: 100%;
+}
+
+@media (max-width:900px) {
+    .image {
+        height: 50%;
+    }
+
+}
+
+@media (min-width:1024px) {
+    .p3 .image {
+        width: 66.66%;
+    }
+
+}
+
+.lgshowsmhide {
+    display: none;
+    height: 70%;
+}
+
+@media (min-width:1024px) {
+    .lgshowsmhide {
+        display: block;
+    }
+
+}
+
+@media (min-width:1024px) {
+    .lghidesmshow {
+        display: none;
+    }
+
+}
+
+.p3 .content {
+    padding: 100px 30px;
+}
+
+@media (min-width:1024px) {
+    .p3 .content {
+        padding: 0 5%;
+    }
+
+}
+
+.p3 .content .title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 0;
+    font-family: 'Iceberg', serif;
+    font-style: normal;
+}
+
+@media (min-width:1024px) {
+    .p3 .content .title {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+}
+
+.p3 .content .caption {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1.2px;
+    margin: 30px 0 0 0;
+}
+
+@media (min-width:1024px) {
+    .p3 .content .caption {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+}
+
+.teamMembersButton {
+    margin-top: 24px;
+    line-height: 36px;
+    float: left;
+    color: #000;
+    cursor: pointer;
+    font-family: Nunito, sans-serif;
+}
+
+
+.people {
+    padding: 2%;
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    font-family: Nunito, sans-serif;
+
+}
+
+.images {
+    background-color: lightblue;
+    font-family: Nunito, sans-serif;
+}
+
+.buttons {
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    font-family: Nunito, sans-serif;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.buttons .teamMembersButton {
+    padding: 10px 20px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.merienda {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.iceberg {
+    font-family: "Iceberg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.description {
+    margin-left: 50px;
+}
+
+@media (max-width:900px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .teamMembersButton {
+
+        /* margin-top: 24px; */
+        margin: 0 auto;
+        color: #000;
+        /* font-weight: 600; */
+        cursor: pointer;
+        font-family: Nunito, sans-serif;
+    }
+
+    .image {
+        width: 50%;
+        height: 50%;
+    }
+
+}
+
+
+
+
+/*----Footer------*/
+/*------Email Section--------*/
+.email .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email_text {
+    font: normal 900 22px/24px 'Lato', sans-serif;
+    letter-spacing: 1.26px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.email_input {
+    display: flex;
+    flex: 1;
+    max-width: 500px;
+}
+
+.text_box {
+    background-color: #f1f1f1;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    flex: 1;
+}
+
+.text_box::placeholder {
+    font: normal 700 20px/24px 'Nunito', sans-serif;
+    letter-spacing: 1.08px;
+    opacity: 1;
+}
+
+.email a {
+    text-decoration: none;
+    background-color: #1534e3;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .email .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .email_text {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .email_input {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .email_input {
+        flex-direction: column;
+    }
+    
+    .text_box {
+        margin-bottom: 10px;
+    }
+    
+    .email a {
+        width: 100%;
+    }
+}
+
+/*--------Social Media Section------*/
+.social_media_section {
+    padding: 80px 0 20px 0;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
+
+/*-----Last Section-------*/
+.footer_section {
+    padding-top: 100px;
+}
+
+.slab1 .title {
+    font: normal 600 30px 'Nunito', sans-serif;
+    letter-spacing: 1.54px;
+    opacity: 1;
+    padding: 15px 0 0 0;
+}
+
+.slab1 .address {
+    font: normal 200 12px/24px 'Nunito', sans-serif;
+    letter-spacing: 3px;
+    max-width: 420px;
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
+
+.slab2 p {
+    font: normal 600 12px 'Nunito', sans-serif;
+    letter-spacing: 6px;
+    padding: 71px 0 0 0;
+}
+
+.links {
+    padding: 26px 0 100px 0;
+}
+
+.slab2 .links a {
+    font: normal 200 12px 'Nunito', sans-serif;
+    letter-spacing: 3px;
+    color: #909090;
+    text-transform: uppercase;
+    padding-left: 50px;
+}
+
+.slab3 {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+.copyright {
+    font: normal 200 12px 'Nunito', sans-serif;
+    letter-spacing: 3px;
+    color: #909090;
+}
+
+@media (max-width:576px) {
+        /* Footer */
+    .email_section {
+        padding: 20px;
+    }
+    
+    .slab1 .title {
+        font-size: 24px;
+    }
+    
+    .slab1 .address {
+        font-size: 11px;
+        letter-spacing: 1px;
+        padding: 15px;
+    }
+    
+    .slab2 p {
+        font-size: 14px;
+        letter-spacing: 3px;
+        padding: 30px 0 0;
+    }
+    
+    .footer_section {
+        padding-top: 50px;
+    }
+    
+    .links {
+        padding: 20px 0 50px;
+    }
+}
+    
+@media (max-width:992px) {
+        /* Footer email section */
+    .email .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .email .col-6 {
+        width: 100%;
+        max-width: 100% !important;
+    }
+    
+    .email_text {
+        font-size: 18px;
+        padding: 20px 0 10px;
+    }
+    
+    .email_input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .email_input .text_box {
+        width: 100%;
+    }
+    
+    /* Footer links */
+    .slab2 .links .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .slab2 .links a {
+        padding-left: 0;
+    }
+
+    
+}
